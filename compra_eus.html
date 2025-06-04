@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/compra.css">
+    <link rel="stylesheet" href="css/counter.css">
+    <link rel="stylesheet" href="css/accordion.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <script src="js/navbar.js"></script>
+
+
+    <section class="compra">
+        <div class="container">
+            <img class="compraImg" src="img/compra1.jpg" alt="">
+            <div class="fotos">
+                <div class="foto1 foto" onclick="cambiarImagen(this)">
+
+                </div>
+                <div class="foto2 foto" onclick="cambiarImagen(this)">
+
+                </div>
+                <div class="foto3 foto" onclick="cambiarImagen(this)">
+
+                </div>
+                <div class="foto4 foto" onclick="cambiarImagen(this)">
+
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <img src="img/URKIOL TAROT.png" alt="">
+            <p>25€ Urkiol karta jokoa. <br>70 irudiz osatutako karta jokoa da. </p>
+            <div class="counter">
+                <div id="plus" class="plus">
+                    <img src="img/plus.png" alt="">
+                </div>
+                <p id="cantidad"></p>
+                <div id="minus" class="minus">
+                    <img src="img/minus.png" alt="">
+                </div>
+            </div>
+            <div class="cesta">
+                <a>
+                    <button class="btn2" id="añadirCesta" onclick="añadirACesta(producto)">
+                        <p>Gehitu saskira</p>
+                    </button>
+                </a>
+            </div>
+
+            <div class="preguntas">
+                <div class="content">
+                    <div class="accordion-item" data-target="info1">
+                        <div class="gezia" style="display: flex; flex-direction: row; justify-content: space-between;">
+                            <p>Deskripzioa</p>
+                            <svg id="info1gora" class="gezia-gora" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M4.94922 15.0503L11.9492 8.05029L18.9492 15.0503L18.0428 15.9492L11.9492 9.85091L5.8556 15.9492L4.94922 15.0503Z"
+                                    fill="#EAEFFA" />
+                            </svg>
+                            <svg id="info1behera" class="gezia-behera" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M4.94922 8.94971L11.9492 15.9497L18.9492 8.94971L18.0428 8.05078L11.9492 14.1491L5.8556 8.05078L4.94922 8.94971Z"
+                                    fill="#EAEFFA" />
+                            </svg>
+                        </div>
+
+                        <p class="info" id="info1"> Urkiol tarot-joko bat da, zure intuizioa garatzeko aukera ematen
+                            dizuna, zure eguneroko pentsamenduei irtenbide berritzaileak bilatzeko.
+                        </p>
+                    </div>
+                    <hr style="color: white; width: 100%;">
+                    <div class="accordion-item" data-target="info2">
+                        <div class="gezia" style="display: flex; flex-direction: row; justify-content: space-between;">
+                            <p>Ezaugarriak</p>
+                            <svg id="info2gora" class="gezia-gora" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M4.94922 15.0503L11.9492 8.05029L18.9492 15.0503L18.0428 15.9492L11.9492 9.85091L5.8556 15.9492L4.94922 15.0503Z"
+                                    fill="#EAEFFA" />
+                            </svg>
+                            <svg id="info2behera" class="gezia-behera" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M4.94922 8.94971L11.9492 15.9497L18.9492 8.94971L18.0428 8.05078L11.9492 14.1491L5.8556 8.05078L4.94922 8.94971Z"
+                                    fill="#EAEFFA" />
+                            </svg>
+                        </div>
+
+                        <p class="info" id="info2">- Karten tamainua: 70 x 100 mm <br>
+                            - Karta kopurua 70 <br>
+                            - karten kutxa dakar <br>
+                            - Karta bakoitzak koloretako ilustrazioak dauka.
+
+                        </p>
+                    </div>
+                    <hr style="color: white; width: 100%;">
+                    <div class="accordion-item" data-target="info3">
+                        <div class="gezia" style="display: flex; flex-direction: row; justify-content: space-between;">
+                            <p>Bidalketak eta deboluzioak</p>
+                            <svg id="info3gora" class="gezia-gora" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M4.94922 15.0503L11.9492 8.05029L18.9492 15.0503L18.0428 15.9492L11.9492 9.85091L5.8556 15.9492L4.94922 15.0503Z"
+                                    fill="#EAEFFA" />
+                            </svg>
+                            <svg id="info3behera" class="gezia-behera" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M4.94922 8.94971L11.9492 15.9497L18.9492 8.94971L18.0428 8.05078L11.9492 14.1491L5.8556 8.05078L4.94922 8.94971Z"
+                                    fill="#EAEFFA" />
+                            </svg>
+                        </div>
+
+                        <p class="info" id="info3"> - **DOAN** bidalketa bigarren unitatetik aurrera.  <br>
+                            - Bidalketa gastuak: 4 € (penintsulara bidalketak soilik) <br>
+                            - Produktua ireki bada, ez dira itzulketak onartzen. Bestela, astebeteko epean itzul
+                            dezakezu.
+
+                        </p>
+                    </div>
+                    <hr style="color: white; width: 100%;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Añadir">
+        <div class="container">
+            <div class="container-content">
+                <div class="title">
+                    <img src="img/ok.png" alt="">
+                    <p class="tituluaa">Saskira gehitua</p>
+                </div>
+                <img id="cerrar" src="img/close.png" alt="">
+            </div>
+            <div class="container-text">
+                <img class="cestaImg" src="img/compra1.jpg" alt="">
+                <div class="text">
+                    <h2 class="tituluaa">URKIOL JOLASA</h2>
+                    <div class="content">
+                        <div class="unidad">
+                            <p id="mostrarCantidad"></p>
+                            <p id="mostrarPrecio"></p>
+                        </div>
+                        <div class="envio">
+                            <p>Bidalketa gastuak</p>
+                            <p>5€</p>
+                        </div>
+                        <div class="total">
+                            <p>Guztira</p>
+                            <p id="precioTotal"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="botones">
+            <a href="cesta_eus.html">
+                <button class="btn2" id="verCesta">
+                    <p>Ikusi saskia</p>
+                </button>
+            </a>
+            <a href="datosPersonales_eus.html">
+                <button class="btn2" id="pagar">
+                    <p>Ordainketa egin</p>
+                </button>
+            </a>
+        </div>
+    </section>
+    <script src="js/compra.js"></script>
+    <script src="js/accordion.js"></script>
+</body>
+
+</html>

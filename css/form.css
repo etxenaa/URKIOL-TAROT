@@ -1,0 +1,133 @@
+.card-container {
+    width: 1029px;
+    height: 593px;
+    gap: 21px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.formulario {
+    width: 629px;
+    height: 593px;
+
+    gap: 32px;
+    padding: 24px;
+    border-radius: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario .input-field {
+    width: 98%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.dudas .input-field {
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.dudas .input-field:nth-child(1) {
+    height: 67px;
+    gap: 2px;
+}
+
+.dudas .input-field:nth-child(2) {
+    height: 218px;
+    gap: 3px;
+}
+
+.formulario label {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 2%;
+    color: var(--Neutral-neutral-50, #9AA1B1);
+
+}
+
+.formulario input {
+    width: 100%;
+    gap: 2․5px;
+    padding-top: 2px;
+    padding-right: 4px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    border-bottom-width: 1px;
+    background: #353865;
+    border: #010F36;
+    border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.dudas input,
+.dudas textarea {
+    width: 100%;
+    gap: 2․5px;
+    padding-top: 2px;
+    padding-right: 4px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    border-bottom-width: 1px;
+    background: #010F36;
+    border: #010F36;
+    border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+
+
+.formulario input {
+
+    height: 40px;
+
+}
+
+.formulario textarea {
+    width: 100%;
+    height: 218px;
+    padding: 10px;
+    background: #010F36;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    resize: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.formulario .input-field input:focus,
+.formulario textarea:focus {
+    outline: none;
+}
+
+.formulario .card-container button {
+    background: linear-gradient(163.71deg, #D9D9D9 12.16%, rgba(217, 217, 217, 0.4) 90.03%);
+
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+    color: var(--Neutral-neutral-20, #E2E8F5);
+
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

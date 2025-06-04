@@ -1,0 +1,88 @@
+.accordion-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: var(--Neutral-neutral-10, #F3F6FD);
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0%;
+
+    height: 150px;
+
+    cursor: pointer;
+}
+
+.preguntas .content {
+    transition: min-height 0.4s ease;
+}
+
+
+.accordion-item .info {
+    display: none;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.gezia {
+    display: flex;
+    align-items: center;
+}
+
+.gezia-gora {
+    display: none;
+}
+
+.gezia-behera {
+    display: block;
+}
+
+@media (max-width: 1540px) {
+    .preguntas .container {
+        width: 100%;
+        align-self: flex-end;
+    }
+
+    .preguntas .container .content {
+        width: 90%;
+        align-self: center;
+    }
+
+    .preguntas .title {
+        align-self: center;
+    }
+}
+
+@media (max-width: 935px) {
+    .preguntas .container .title img {
+        width: 600px;
+    }
+
+    .preguntas .container .accordion-item p {
+        font-size: 23px;
+    }
+
+    .preguntas .container .accordion-item .info {
+        font-size: 18px;
+    }
+}
+
+
+@media(max-width:740px) {
+    .preguntas .container .title img {
+        width: 400px;
+    }
+
+    .preguntas .container .accordion-item p {
+        font-size: 20px;
+    }
+
+    .preguntas .container {
+        align-self: center;
+    }
+
+    .preguntas .container .accordion-item .info {
+        font-size: 15px;
+    }
+}

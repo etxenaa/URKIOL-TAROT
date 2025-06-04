@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página base para los demás HTML">
+    <title>Datos Personales</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/datosPersonales.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <script src="js/navbar.js"></script>
+    <div class="container-datos">
+
+        <section class="formulario">
+            <h2 class="tituluaa">DATOS PERSONALES</h2>
+            <p>Paso 1 de 2</p>
+            <div class="input-field">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Nombre" required>
+                <p id="error" class="erroreaIzena">Introduce tu nombre</p>
+            </div>
+            <div class="input-field">
+                <label for="surname">Apellido</label>
+                <input type="text" id="surname" name="surname" placeholder="Apellido" required>
+                <p id="error" class="erroreaAbizena">Introduce tu apellido</p>
+            </div>
+            <div class="input-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                <p id="error" class="erroreaEmaila">Introduce tu correo electrónico</p>
+            </div>
+            <div class="input-field">
+                <label for="dirección">Dirección</label>
+                <input type="text" id="dirección" name="dirección" placeholder="Dirección" required>
+                <p id="error" class="erroreaHelbidea">Introduce una dirección</p>
+            </div>
+            <div class="direccion2">
+                <div class="input-field">
+                    <label for="code">Código postal</label>
+                    <input type="number" id="code" name="code" placeholder="ej:48200" required>
+                    <p id="error" class="erroreaPostaKodea">Introduce un código</p>
+                </div>
+                <div class="input-field">
+                    <label for="localidad">Localidad</label>
+                    <input type="text" id="localidad" name="localidad" placeholder="Localidad" required>
+                    <p id="error" class="erroreaHiria">Introduce tu localidad</p>
+                </div>
+            </div>
+
+            <label class="switch-container">
+                <div class="switch">
+                    <input type="checkbox" id="miCheckbox">
+                    <span class="slider"></span>
+                </div>
+
+                <div>
+                    <p>Empresa</p>
+                </div>
+            </label>
+            <div class="empresa-container">
+                <div class="input-field">
+                    <label for="nombreEmpresa">Nombre o razón social</label>
+                    <input type="text" id="empresa" name="empresa" placeholder="Nombre" required>
+                    <p id="error" class="erroreaEmpresa">Escribe un nombre o razón social</p>
+                </div>
+
+                <div class="input-field">
+                    <label for="localidad">Localidad</label>
+                    <input type="text" id="nif" name="nif" placeholder="NIF" required>
+                    <p id="error" class="erroreaNif">NIF</p>
+                </div>
+            </div>
+            <a href="#">
+                <button class="btn2" id="continuar">
+                    <p>Pago seguro</p>
+                </button>
+
+            </a>
+
+            <p style="font-size: 13px;">*El pago se realizara con la plataforma STRIPE</p>
+        </section>
+
+        <section class="resumen">
+            <h2 class="tituluaa">LABURPENA</h2>
+            <div class="container">
+                <div class="subtotal">
+                    <p>Subtotal</p>
+                    <p id="precioSub"></p>
+                </div>
+                <div class="envio">
+                    <p>Gastos de envío</p>
+                    <p id="precioEnvio">5€</p>
+                </div>
+                <div class="total">
+                    <p>Total</p>
+                    <p id="precioTot"></p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="js/datosPersonales.js"></script>
+</body>
+
+</html>

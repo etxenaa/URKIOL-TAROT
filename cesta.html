@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesta</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/cesta.css">
+    <link rel="stylesheet" href="css/counter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <script src="js/navbar.js"></script>
+    <div class="vacia">
+        <h2 class="tituluaa">RESUMEN</h2>
+        <div class="content">
+            <div class="title">
+                <p>Tu cesta esta vacía</p>
+            </div>
+            <div class="text">
+                <img src="img/vacia.png" alt="">
+            </div>
+        </div>
+        <div class="boton">
+            <a href="index.html">
+                <button class="btn2">
+                    <p>Ir a inicio</p>
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="container-cesta">
+
+        <section class="producto" data-id="1">
+            <h2 class="tituluaa">PRODUCTO</h2>
+            <div class="container">
+                <img src="img/compra1.jpg" alt="">
+                <div class="nombre">
+                    <p>PRODUCTO</p>
+                    <p>Urkiol Tarot</p>
+                </div>
+                <div class="precio">
+                    <p>PRECIO</p>
+                    <p>25€</p>
+                </div>
+                <div class="cantidad">
+                    <p>CANTIDAD</p>
+                    <div class="counter">
+                        <div id="plus" class="plus2">
+                            <img src="img/plus.png" alt="">
+                        </div>
+                        <p id="cantidad2"></p>
+                        <div id="minus" class="minus2">
+                            <img src="img/minus.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="subtotal">
+                    <p>SUBTOTAL</p>
+                    <p class="precioSubtotal"></p>
+                </div>
+            </div>
+
+        </section>
+        <section class="resumen">
+            
+            <h2 class="tituluaa">RESUMEN</h2>
+            <div class="content">
+                <div class="subtotal">
+                    <p>Subtotal</p>
+                    <p id="mostrarSub"></p>
+                </div>
+                <div class="envio">
+                    <p>Gastos de envío</p>
+                    <p>5€</p>
+                </div>
+                <div class="total">
+                    <p>Total</p>
+                    <p id="precioTotal"></p>
+                </div>
+            </div>
+            <div class="boton">
+                <a href="datosPersonales.html">
+                    <button class="btn2">
+                        <p>Finalizar pedido</p>
+                    </button>
+                </a>
+            </div>
+        </section>
+
+    </div>
+    <script src="js/cesta.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: var(--Primary-100, #232548);
+    color: #333;
+}
+
+.container-cesta {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 180px;
+    margin-left: 64px;
+}
+
+
+.vacia {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: var(--Neutral-neutral-10, #F3F6FD);
+    font-size: 48px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tituluaa {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 40px;
+    margin: 0;
+}
+
+.producto {
+    display: none;
+    flex-direction: column;
+    width: 50%;
+    max-height: 316px;
+    padding: 24px;
+    gap: 78px;
+    background: #353865;
+    border-radius: 24px;
+}
+
+
+
+.resumen {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 37%;
+    max-height: 316px;
+
+    background: #353865;
+    border-radius: 24px;
+
+}
+
+
+
+.producto img:nth-child(1) {
+    width: 138px;
+    height: 30px;
+}
+
+.producto .container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: center;
+}
+
+.producto .container img {
+    width: 71px;
+    height: 86px;
+    border-radius: 50%;
+}
+
+.producto .container p {
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: var(--Neutral-neutral-10, #F3F6FD);
+
+}
+
+
+
+.resumen .content {
+    width: 100%;
+}
+
+.resumen .content div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.resumen .content p {
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: var(--Neutral-neutral-10, #F3F6FD);
+}
+
+.btn2 {
+    background: linear-gradient(163.71deg, #D9D9D9 12.16%, rgba(217, 217, 217, 0.4) 90.03%);
+    border: 0.49px solid var(--Neutral-neutral-0, #FFFFFF);
+    backdrop-filter: blur(39.4202880859375px);
+    color: #0D1041;
+
+}
+
+.boton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.vacia {
+    flex-direction: column;
+    align-items: start;
+    width: 538px;
+    height: 589px;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 24px;
+    background: var(--Primary-90, #353865);
+
+}
+
+.vacia .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+
+}
+
+.vacia .content img {
+    width: 223px;
+    height: 321px;
+
+    background: url(../img/va);
+    border-radius: 488px;
+}
+
+.vacia .btn2 {
+    background: linear-gradient(163.71deg, #D9D9D9 12.16%, rgba(217, 217, 217, 0.4) 90.03%);
+    border: 0.49px solid var(--Neutral-neutral-0, #FFFFFF);
+    backdrop-filter: blur(39.4202880859375px)
+}
+
+@media(max-width:1700px) {
+
+    .producto {
+        width: 45%;
+
+    }
+}
+
+@media(max-width: 1380px) {
+    .container-cesta {
+        flex-direction: column;
+    }
+
+    .producto {
+        width: 95%;
+        max-height: 100%;
+        margin-bottom: 24px;
+    }
+
+    .resumen {
+        width: 95%;
+        max-height: 100%;
+    }
+}
+
+@media(max-width: 1180px) {
+    .producto {
+        width: 90%;
+    }
+
+    .resumen {
+        width: 90%;
+    }
+}
+
+@media(max-width: 700px) {
+
+    .container-cesta {
+        margin-top: 130px;
+    }
+
+    .producto {
+        width: 80%;
+        align-items: center;
+    }
+
+    .resumen {
+        width: 80%;
+    }
+
+    .producto .container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .producto .container .nombre,
+    .producto .container .precio,
+    .producto .container .cantidad,
+    .producto .container .subtotal {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .plus2,
+    .minus2 {
+        align-self: center;
+    }
+}
+
+@media(max-width: 600px) {
+    .vacia {
+        max-width: 60%;
+        height: 450px;
+    }
+
+    .vacia .content .text img {
+        width: 200px;
+        height: 240px;
+    }
+
+    .vacia .btn2{
+        width: 200px;
+    }
+
+    .vacia .btn2 p {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 460px) {
+    .container-cesta {
+
+        left: 25px;
+    }
+
+    .producto {
+        width: 70%;
+    }
+
+    .resumen {
+        width: 70%;
+    }
+
+}

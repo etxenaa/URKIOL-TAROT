@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página base para los demás HTML">
+    <title>Datos Personales</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/datosPersonales.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <script src="js/navbar.js"></script>
+    <div class="container-datos">
+
+        <section class="formulario">
+            <h2 class="tituluaa">DATU PERTSONALAK</h2>
+            <p>1. hurratsa 2 tik</p>
+            <div class="input-field">
+                <label for="name">Izena</label>
+                <input type="text" id="name" name="name" placeholder="Izena" required>
+                <p id="error" class="erroreaIzena">Zure izena idatzi</p>
+            </div>
+            <div class="input-field">
+                <label for="surname">Abizena</label>
+                <input type="text" id="surname" name="surname" placeholder="Abizena" required>
+                <p id="error" class="erroreaAbizena">Zure abizena idatzi</p>
+            </div>
+            <div class="input-field">
+                <label for="email">Helbide elektronikoa</label>
+                <input type="email" id="email" name="email" placeholder="Helbide elektronikoa" required>
+                <p id="error" class="erroreaEmaila">Helbide elektronikoa idatzi</p>
+            </div>
+            <div class="input-field">
+                <label for="dirección">Helbidea</label>
+                <input type="text" id="dirección" name="dirección" placeholder="Helbidea" required>
+                <p id="error" class="erroreaHelbidea">Idatzi zure helbidea</p>
+            </div>
+            <div class="direccion2">
+                <div class="input-field">
+                    <label for="code">Posta kodea</label>
+                    <input type="number" id="code" name="code" placeholder="adb:48200" required>
+                    <p id="error" class="erroreaPostaKodea">Posta kodea idatzi</p>
+                </div>
+                <div class="input-field">
+                    <label for="localidad">Hiria</label>
+                    <input type="text" id="localidad" name="localidad" placeholder="Hiria" required>
+                    <p id="error" class="erroreaHiria">Zure hiria idatzi</p>
+                </div>
+            </div>
+
+            <label class="switch-container">
+                <div class="switch">
+                    <input type="checkbox" id="miCheckbox">
+                    <span class="slider"></span>
+                </div>
+
+                <div>
+                    <p>Enpresa</p>
+                </div>
+            </label>
+            <div class="empresa-container">
+                <div class="input-field">
+                    <label for="nombreEmpresa">Enpresaren izena</label>
+                    <input type="text" id="empresa" name="empresa" placeholder="Izena" required>
+                    <p id="error" class="erroreaEmpresa">Idatzi enpresa baten izena</p>
+                </div>
+
+                <div class="input-field">
+                    <label for="localidad">NIF-a</label>
+                    <input type="text" id="nif" name="nif" placeholder="NIF" required>
+                    <p id="error" class="erroreaNif">Enpresaren NIF-a idatzi</p>
+                </div>
+            </div>
+            <a href="#">
+                <button class="btn2" id="continuar">
+                    <p>Ordainketa segurua</p>
+                </button>
+            </a>
+            
+            <p style="font-size: 13px;">*Ordainketa STRIPE plataformaren bidez egingo da</p>
+        </section>
+
+        <section class="resumen">
+            <h2 class="tituluaa">LABURPENA</h2>
+            <div class="container">
+                <div class="subtotal">
+                    <p>Subtotala</p>
+                    <p id="precioSub"></p>
+                </div>
+                <div class="envio">
+                    <p>Bidalketa gastuak</p>
+                    <p id="precioEnvio">5€</p>
+                </div>
+                <div class="total">
+                    <p>Guztira</p>
+                    <p id="precioTot"></p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="js/datosPersonales.js"></script>
+</body>
+
+</html>

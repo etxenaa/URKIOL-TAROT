@@ -1,0 +1,488 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--Primary-100, #232548);
+
+    color: #333;
+}
+
+.compra .tituluaa {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+section {
+    width: 90%;
+    gap: 88px;
+    padding-top: 100px;
+    padding-bottom: 48px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.compra .container {
+    width: 740px;
+    height: 764px;
+    gap: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container2 {
+    width: 715px;
+    height: 580px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container .compraImg {
+    width: 523px;
+    height: 654px;
+    border-radius: 50%;
+}
+
+.container2 img {
+    width: 289px;
+
+}
+
+.compra .fotos {
+    width: 70%;
+    height: 86px;
+    gap: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.compra .foto {
+    width: 72px;
+    height: 86px;
+    gap: 16px;
+    border-radius: 50%;
+
+}
+
+.compra .foto1 {
+    background: url("../img/compra3.jpg"), #D9D9D9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.compra .foto2 {
+    background: url("../img/compra2.jpg"), #D9D9D9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.compra .foto3 {
+    background: url("../img/compra4.jpg"), #D9D9D9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.compra .foto4 {
+    background: url("../img/compra5.jpg"), #D9D9D9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.compra .container2 p:nth-child(2) {
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: var(--Neutral-neutral-0, #FFFFFF);
+
+}
+
+
+.cesta {
+    height: 92px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.cesta .btn2 {
+    background: linear-gradient(163.71deg, #D9D9D9 12.16%, rgba(217, 217, 217, 0.4) 90.03%);
+}
+
+.cesta .btn2 p {
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 23.65px;
+    line-height: 23.65px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #0D1041;
+}
+
+.cesta .acordeon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 70%;
+    height: 288px;
+
+}
+
+.Añadir {
+    background: var(--Primary-80, #494D82);
+    width: 601px;
+    height: 100;
+    position: absolute;
+    padding: 24px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100000000000000;
+    box-shadow: -24px 0px 40px 0px #00000040;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Añadir .tituluaa{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+
+.Añadir .container .container-content .title {
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    height: 40px;
+}
+
+.Añadir .container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: start;
+    gap: 24px;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.Añadir .container .container-content {
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.Añadir .container .container-content img:nth-child(1) {
+    width: 38px;
+    height: 38px;
+}
+
+.Añadir .container .container-content img:nth-child(2) {
+    width: 29px;
+    height: 29px;
+}
+
+
+
+.Añadir .container .container-content .title p {
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    color: var(--Neutral-neutral-10, #F3F6FD);
+
+}
+
+.Añadir .container-text .text img {
+    width: 224px;
+    height: 44px;
+
+}
+
+.Añadir .cestaImg {
+    width: 103.9px;
+    height: 124.6px;
+    border-radius: 50%;
+}
+
+.Añadir .container-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    background: var(--Primary-90, #353865);
+    border-radius: 24px;
+    width: 100%;
+    height: 200px;
+}
+
+.Añadir .container-text .text {
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Añadir .container-text .text .content {
+    height: 120px;
+
+}
+
+.Añadir .container-text .text div div {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--Neutral-neutral-10, #F3F6FD);
+}
+
+
+.Añadir .container-text .text div div p {
+    align-self: center;
+}
+
+.Añadir .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.Añadir .botones #verCesta {
+
+    background: var(--Primary-80, #494D82);
+    color: var(--Neutral-neutral-0, #FFFFFF);
+
+}
+
+.Añadir .botones #pagar {
+    background: linear-gradient(163.71deg, #D9D9D9 12.16%, rgba(217, 217, 217, 0.4) 90.03%);
+    color: linear-gradient(163.71deg, #D9D9D9 12.16%, rgba(217, 217, 217, 0.4) 90.03%);
+
+}
+
+@media (max-width: 970px) {
+
+
+    .container .compraImg {
+        width: 473px;
+        height: 604px;
+    }
+
+    .compra .foto {
+        width: 67px;
+        height: 81px;
+
+    }
+}
+
+@media (max-width: 910px) {
+    .container .compraImg {
+        width: 423px;
+        height: 554px;
+    }
+
+    .compra .foto {
+        width: 62px;
+        height: 76px;
+
+    }
+}
+
+@media (max-width: 860px) {
+    .container .compraImg {
+        width: 373px;
+        height: 504px;
+    }
+
+    .compra .foto {
+        width: 57px;
+        height: 61px;
+
+    }
+}
+
+@media (max-width: 860px) {
+    .container .compraImg {
+        width: 373px;
+        height: 504px;
+    }
+
+    .compra .foto {
+        width: 52px;
+        height: 66px;
+
+    }
+}
+
+@media (max-width: 810px) {
+    .container .compraImg {
+        width: 323px;
+        height: 454px;
+    }
+
+    .compra .foto {
+        width: 47px;
+        height: 61px;
+
+    }
+
+    .cesta .btn2 {
+        width: 220px;
+        height: 60px;
+    }
+
+    .cesta .btn2 p {
+        font-size: 22px;
+    }
+
+    .accordion-item p:nth-child(1) {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 760px) {
+    .container .compraImg {
+        width: 273px;
+        height: 404px;
+    }
+
+    .compra .foto {
+        width: 42px;
+        height: 56px;
+
+    }
+
+    .accordion-item p:nth-child(1) {
+        font-size: 22px;
+    }
+
+    .cesta .btn2 {
+        width: 200px;
+        height: 60px;
+    }
+
+    .cesta .btn2 p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container .compraImg {
+        width: 223px;
+        height: 324px;
+    }
+
+    .compra .foto {
+        width: 37px;
+        height: 51px;
+
+    }
+
+    section {
+        gap: 30px;
+    }
+
+    .Añadir {
+
+        width: 80%;
+    }
+
+    .Añadir .btn2{
+        width: 200px;
+    }
+
+    .Añadir .btn2 p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container .compraImg {
+        width: 223px;
+        height: 324px;
+    }
+
+    .compra .foto {
+        width: 37px;
+        height: 51px;
+
+    }
+
+    section {
+        gap: 16px;
+    }
+}
+
+
+@media (max-width: 590px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .compra .container {
+        width: 70%;
+        max-height: 400px;
+        padding: 0 16px;
+    }
+
+    .container2 {
+        width: 100%;
+        height: auto;
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 550px) {
+    .Añadir .container p{
+        font-size: 17px;
+    }
+
+    .Añadir img{
+        width: 10px;
+    }
+
+    .Añadir .container .container-text .text{
+        align-items: center;
+    }
+
+    .Añadir .container .container-text .content {
+        width: 90%;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+}

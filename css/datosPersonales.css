@@ -1,0 +1,260 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--Primary-100, #232548);
+
+    color: #333;
+}
+
+.tituluaa{
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+span {
+    color: var(--Neutral-neutral-10, #252525);
+}
+
+.erroreaIzena,
+.erroreaAbizena,
+.erroreaEmaila,
+.erroreaHelbidea,
+.erroreaPostaKodea,
+.erroreaHiria,
+.erroreaEmpresa,
+.erroreaNif {
+    display: none;
+
+}
+
+.container-datos {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    align-self: center;
+
+    padding: 20px;
+    gap: 20px;
+    width: 90%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formulario .input-field p {
+    color: red;
+    font-family: Lato;
+    font-size: 14px;
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+.switch-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.switch {
+    position: relative;
+    display: flex;
+    width: 46px;
+    height: 26.9px;
+    background: var(--Primary-30, #CCCFFE);
+
+    border-radius: 20px;
+
+
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+    display: flex;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    top: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.empresa-container {
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.empresa-container .input-field {
+    width: 48%;
+}
+
+input:checked+.slider::before {
+    transform: translateX(18px);
+}
+
+
+input:checked+.slider {
+    background-color: var(--Primary-60, #797DBC);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 19px;
+
+    width: 47%;
+    height: 825px;
+
+    background: #353865;
+    border-radius: 24px;
+
+}
+
+.formulario p {
+    color: var(--Neutral-neutral-10, #F3F6FD);
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+
+}
+
+.formulario .direccion2 {
+    display: flex;
+    width: 98%;
+    height: 100px;
+    justify-content: space-between;
+}
+
+
+.formulario .direccion2 .input-field:nth-child(1) {
+    width: 20%;
+}
+
+.formulario .direccion2 .input-field:nth-child(2) {
+    width: 75%;
+}
+
+.formulario input {
+    color: var(--Neutral-neutral-20, #E2E8F5);
+}
+
+
+.resumen {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 47%;
+    height: 240px;
+
+    background: #353865;
+    border-radius: 24px;
+
+}
+
+.btn2 {
+    background: linear-gradient(163.71deg, #D9D9D9 12.16%, rgba(217, 217, 217, 0.4) 90.03%);
+
+}
+
+.btn2 p {
+
+    color: #0D1041;
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 23.65px;
+    line-height: 23.65px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.resumen .container {
+    width: 100%;
+}
+
+.resumen .container div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.resumen .container div p {
+    color: var(--Neutral-neutral-10, #F3F6FD);
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+
+@media(max-width: 1095px) {
+    .container-datos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario {
+        width: 90%;
+    }
+
+    .resumen {
+        width: 90%;
+    }
+}
+
+@media(max-width: 543px) {
+    .formulario .direccion2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .formulario .direccion2 .input-field:nth-child(1),
+    .formulario .direccion2 .input-field:nth-child(2) {
+        width: 98%;
+    }
+}
+
+@media(max-width: 480px) {
+    .formulario {
+        width: 85%;
+    }
+
+    .resumen {
+        width: 85%;
+    }
+}
